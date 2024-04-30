@@ -7,7 +7,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 
   <title>Sujeito Programador - Meu portfolio</title>
 </head>
@@ -24,6 +24,9 @@
       </li>
       <li>
         <a href="#projetos">Projetos</a>
+      </li>
+      <li>
+        <a href="#contato">Contato</a>
       </li>
     </ul>
   </nav>
@@ -62,20 +65,88 @@
     <p>Conheça meus últimos projetos</p>
 
     <div class="project-list">
-      <img src="" alt="Foto do projeto 1">
-      <img src="" alt="Foto do projeto 2">
-      <img src="" alt="Foto do projeto 3">
+      <img src="images/projeto1.png" alt="Foto do projeto 1">
+      <img src="images/projeto2.png" alt="Foto do projeto 2">
+      <img src="images/projeto3.png" alt="Foto do projeto 3">
     </div>
 
-    <div>
-      <img src="" alt="Foto do projeto 2">
-      <img src="" alt="Foto do projeto 1">
-      <img src="" alt="Foto do projeto 3">
+    <div class="project-list">
+      <img src="images/projeto2.png" alt="Foto do projeto 2">
+      <img src="images/projeto1.png" alt="Foto do projeto 1">
+      <img src="images/projeto3.png" alt="Foto do projeto 3">
     </div>
 
-    <button >Faça um orçamento</button>
+    <button class="action">Faça um orçamento</button>
   </section>
   <!-- FIM PROJETOS -->
+
+  <section id="contato" class="container">
+      <div class="form">
+        <form action="#">
+            <div class="form-header">
+                <div class="title">
+                    <h1>Contato</h1>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <div class="input-box">
+                    <label for="firstname">Primeiro Nome</label>
+                    <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="lastname">Sobrenome</label>
+                    <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                </div>
+                <div class="input-box">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="number">Celular</label>
+                    <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="password">Senha</label>
+                    <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                </div>
+
+
+                <div class="input-box">
+                    <label for="confirmPassword">Confirme sua Senha</label>
+                    <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha novamente" required>
+                </div>
+
+            </div>
+
+            <div class="gender-inputs">
+                <div class="gender-title">
+                    <h6>Gênero</h6>
+                </div>
+
+                <div class="gender-group">
+                    <div class="gender-input">
+                        <input id="female" type="radio" name="gender">
+                        <label for="female">Feminino</label>
+                    </div>
+
+                    <div class="gender-input">
+                        <input id="male" type="radio" name="gender">
+                        <label for="male">Masculino</label>
+                    </div>
+                  
+                </div>
+            </div>
+
+            <div class="continue-button">
+                <button><a href="#">Continuar</a> </button>
+            </div>
+        </form>
+    </div>
+  </section>
 
   <!-- INICIO RODAPE -->
   <footer>
